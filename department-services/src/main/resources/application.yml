@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/department_db
+    username: root
+    password: root
+
+
+  jpa:
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
+
+    hibernate:
+      ddl-auto: create
+
+  application:
+    name: DEPARTMENT-SERVICES
+
+eureka:
+  instance:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
